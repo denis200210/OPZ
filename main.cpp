@@ -270,7 +270,7 @@ void MakeTerm(string *Term,int n,string s,int *k)
             Term[(*k)]=s[i];
             (*k)++;
         }
-        if(s[i]=='+'||s[i]=='-'||s[i]=='*'||s[i]=='/'||s[i]=='^'||s[i]=='%')
+        if(s[i]=='+'||s[i]=='-'||s[i]=='*'||s[i]=='/')
         {
             Term[(*k)]=s[i];
             (*k)++;
