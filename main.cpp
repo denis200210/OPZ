@@ -38,8 +38,7 @@ int Priority (char c)
 {
     switch(c)
     {
-        case '%':return 5;
-        case '^':return 4;
+       
         case '+':case '-':return 2;
         case '*':case '/':return 3;
     }
