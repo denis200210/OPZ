@@ -2,7 +2,7 @@
 #include<cstring>
 #include<cstdio>
 #include<cstdlib>
-
+#include<Function.h>
 using namespace std;
 struct node
 {
@@ -151,18 +151,7 @@ void LPK(node* Tree)
         double x2=Pop();
         Push_nd(x1*x2);
     }
-    if(Tree->key=="^")
-    {
-        double x1=Pop();
-        double x2=Pop();
-        Push_nd(pow(x2,x1));
-    }
-    if(Tree->key=="%")
-    {
-        double x1=Pop();
-        double x2=Pop();
-        Push_nd(fmod(x2,x1));
-    }
+ 
     return;
 }
 int SizeTree(string s,int n)
